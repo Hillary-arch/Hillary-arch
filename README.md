@@ -1,12 +1,1 @@
-- 👋 Hi, I’m @Hillary-arch
-- 👀 I’m interested in everything 
-- 🌱 I’m currently learning XX
-- 💞️ I’m looking to collaborate on 👀
-- 📫 How to reach me hillaryturin@gmail.com
-- 😄 Pronouns: He/His
-- ⚡ Fun fact: i hate the silber lining.
-
-<!---
-Hillary-arch/Hillary-arch is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Hi, I'm Hillary Turinawe, a physician in training at the University of Bonn and founder of Sauti Dispatch Ltd (sautihealth.com). Sauti believes medicine's most powerful tools should reach everyone. We build health infrastructure that works on any phone, in local languages, and turns everyday care into the structured data and AI that low-resource health systems have never had. I work across clinical research, data and technology, with a long-term focus on global surgery and health systems. I write about medicine, science and technology at Working Diagnosis (turinawehillarie.substack.com).
