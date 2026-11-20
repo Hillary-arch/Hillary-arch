@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sauti Investor Memo</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Sauti Health: the market, unit economics and impact of emergency response where national dispatch is being built, with an interactive country-by-country model.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="#top"><i aria-hidden="true"></i>Sauti Health</a>
+    <nav aria-label="Sections">
+      <a href="#market">Market</a><a href="#contract">Contracts</a><a href="#data">Data</a><a href="#evidence">Evidence</a><a href="#model">Model</a><a href="#countries">Countries</a><a href="#round">Round</a>
+    </nav>
+    <a class="btn pri" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="open">
+  <div class="wrap">
+    <div class="col stack">
+      <p class="label">Investor memo · November 2026</p>
+      <h1>Emergency response is becoming a service governments and insurers pay for. Sauti is the layer that runs it.</h1>
+      <p class="lede">Sauti takes an emergency call on any phone, in the caller's language, triages it with AI checked by a dispatcher, sends the nearest trained responder and alerts the receiving hospital. Every call leaves a structured record. We build national emergency response with governments, and sell to employers and health insurers alongside.</p>
+    </div>
+    <div class="meta">
+      <div><span class="label">Company</span><b>Sauti Dispatch Limited</b></div>
+      <div><span class="label">Stage</span><b>Pre-seed, raising now</b></div>
+      <div><span class="label">Addressable</span><b id="metaN">72 countries</b></div>
+      <div><span class="label">Annual contract value, all countries</span><b id="metaTAM">–</b></div>
+    </div>
+    <div class="figs" id="figs" aria-live="polite"></div>
+    <p class="small" style="margin-top:10px">Totals across the 72 low and lower-middle income countries in the World Bank classification, from World Bank and WHO estimates.<sup class="r"><a href="#r1">1</a></sup></p>
+  </div>
+</section>
+
+<section id="market">
+  <div class="wrap two">
+    <div class="stack">
+      <p class="label">Why now</p>
+      <h2>The payers already exist. What is missing is the system that turns a call into a verified response.</h2>
+    </div>
+    <div class="stack muted">
+      <p><b style="color:var(--ink)">Governments.</b> National emergency services are being built and paid for per response. Kenya's Social Health Authority pays KES 4,500 for each ambulance evacuation within 25 km and KES 75 per kilometre beyond, only against a verified record.<sup class="r"><a href="#r2">2</a></sup> Nigeria's national emergency medical service has grown from one territory to 34 states and is now building a national digital dispatch platform.<sup class="r"><a href="#r14">14</a></sup></p>
+      <p><b style="color:var(--ink)">Employers.</b> Under Uganda's Workers Compensation Act, an employer owes 60 months of a worker's earnings for a death or permanent total incapacity, plus medical costs.<sup class="r"><a href="#r3">3</a></sup> A faster, documented response costs less than the claim.</p>
+      <p><b style="color:var(--ink)">Insurers.</b> Health insurance coverage ranges from under 2% to 79% across the countries surveyed, with public schemes expanding fastest.<sup class="r"><a href="#r4">4</a></sup> Insurers pay for emergency care and need it verified.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contract">
+  <div class="wrap">
+    <div class="col stack">
+      <p class="label">A national contract</p>
+      <h2>Three fees, sized by the country.</h2>
+      <p class="muted">Sauti works with the government's own dispatch centres, ambulances and hospitals and adds what they lack: language understanding, triage, trained community responders and verified records. Governments already buy national health services this way. Ghana contracted nationwide medical drone delivery as a four-year service for USD 12.5 million, about USD 0.10 per person a year.<sup class="r"><a href="#r15">15</a></sup> In India, states fund the setup of 108 emergency centres and contract out their operation.<sup class="r"><a href="#r16">16</a></sup></p>
+    </div>
+    <div class="tbl" style="margin-top:22px">
+      <table class="t">
+        <thead><tr><th>Fee</th><th>Basis</th><th>Benchmark</th></tr></thead>
+        <tbody>
+          <tr><td><b>Setup</b> · always charged</td><td>Per dispatch centre; the number of centres follows population</td><td>Uganda plans 12 regional centres for about 51 million people; India's 108 infrastructure costs under USD 0.50 per person served<sup class="r"><a href="#r16">16</a></sup></td></tr>
+          <tr><td><b>Annual service</b></td><td>Per person covered, per year</td><td>Ghana's national drone delivery service: about USD 0.10 per person a year<sup class="r"><a href="#r15">15</a></sup></td></tr>
+          <tr><td><b>Per verified dispatch</b></td><td>Per community response, against a complete record</td><td>Kenya: KES 4,500 per ambulance evacuation<sup class="r"><a href="#r2">2</a></sup>; Tanzania's community referrals: USD 170 each<sup class="r"><a href="#r8">8</a></sup></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fn">The annual and per-dispatch fees can run together or alone, depending on how a government budgets. The model lets you switch each one.</p>
+    <div class="tbl" style="margin-top:18px"><table class="t" id="tContract"></table></div>
+    <p class="fn">Contract value per year at full national scope, using the default prices in the model. Change the prices in the model and this table updates.</p>
+  </div>
+</section>
+
+<section id="data">
+  <div class="wrap two">
+    <div class="stack">
+      <p class="label">The data asset</p>
+      <h2>The first minutes of an emergency are the least recorded part of any health system.</h2>
+    </div>
+    <div class="stack muted">
+      <p>Each Sauti call produces a timestamped, located, triaged case: what happened, how severe it was, who responded, how long each step took and where the patient went. It is captured as part of the response, so it costs nothing extra to collect.</p>
+      <p>The voice and triage models are trained by Sauti on its own calls, in the languages callers actually speak. Each new country adds languages and cases, which makes the next country cheaper to enter and the models harder to copy.</p>
+      <p class="small">Data revenue is not included in the model.</p>
+    </div>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="wrap">
+    <div class="col stack">
+      <p class="label">What the evidence says</p>
+      <h2>Coordinated first response saves lives at low cost.</h2>
+    </div>
+    <div class="two" style="margin-top:22px">
+      <div class="stack">
+        <h3>Trauma</h3>
+        <p class="muted">Across low and middle income countries, prehospital trauma systems were associated with a 25% relative reduction in mortality (95% CI 15 to 34%), larger in rural areas. Three of the four rural programmes used trained lay responders as the first tier.<sup class="r"><a href="#r6">6</a></sup> In Kampala, lay responders trained in one day retained and used their skills for at least six months.<sup class="r"><a href="#r7">7</a></sup></p>
+      </div>
+      <div class="stack">
+        <h3>Obstetric emergencies</h3>
+        <p class="muted">Tanzania's m-mama community transport system completed referrals for USD 170 each against USD 472 by ambulance alone.<sup class="r"><a href="#r8">8</a></sup> In its first year in Sengerema it was associated with a 27% fall in maternal mortality, at about USD 2,000 per maternal life saved.<sup class="r"><a href="#r9">9</a></sup> The government has since taken the programme national.<sup class="r"><a href="#r17">17</a></sup></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="model">
+  <div class="wrap">
+    <div class="col stack">
+      <p class="label">The model</p>
+      <h2>Ten years, contract by contract, in US dollars.</h2>
+      <p class="muted">Each country enters when its national contract is signed and reaches full national scope over the rollout period. Inputs are marked <span class="k d">data</span> when they come from an official dataset, <span class="k m">market</span> when they are prices already paid, and <span class="k a">assumption</span> when they are ours to defend and yours to change. Costs are built from market prices, so margins are an output.</p>
+    </div>
+
+    <div class="panel">
+      <aside class="inputs" aria-label="Model inputs">
+        <details class="g" open>
+          <summary>Contracts</summary>
+          <div class="presets" role="group" aria-label="Country scenario">
+            <button type="button" data-p="one">Uganda only</button>
+            <button type="button" data-p="wave" aria-pressed="true">First wave</button>
+            <button type="button" data-p="broad">Broad</button>
+          </div>
+          <p class="small mono" id="selSummary" style="margin-top:8px"></p>
+          <p class="small">Contract years are set per country in the Countries section.</p>
+          <div class="c" data-k="rampYears"></div>
+          <div class="c" data-k="capture"></div>
+        </details>
+        <details class="g" open>
+          <summary>Government fees</summary>
+          <div class="c" data-k="peoplePerCentre"></div>
+          <div class="c" data-k="feePerCentre"></div>
+          <div class="seg" role="group" aria-label="Annual service fee">
+            <button type="button" id="tgA" aria-pressed="true">Annual fee on</button>
+            <button type="button" id="tgD" aria-pressed="true">Per-dispatch fee on</button>
+          </div>
+          <div class="c" data-k="feeCapita"></div>
+          <div class="c" data-k="tariffShare"></div>
+        </details>
+        <details class="g">
+          <summary>Employers and insurers</summary>
+          <div class="c" data-k="workers"></div>
+          <div class="c" data-k="pricePerWorker"></div>
+          <div class="c" data-k="insUptake"></div>
+          <div class="c" data-k="pmpm"></div>
+          <div class="c" data-k="insIncident"></div>
+        </details>
+        <details class="g">
+          <summary>Demand</summary>
+          <div class="c" data-k="injPerDeath"></div>
+          <div class="c" data-k="obsCompl"></div>
+          <div class="c" data-k="otherInc"></div>
+        </details>
+        <details class="g">
+          <summary>Costs</summary>
+          <div class="c" data-k="responderPay"></div>
+          <div class="c" data-k="telecom"></div>
+          <div class="c" data-k="gpu"></div>
+          <div class="c" data-k="audioMin"></div>
+          <div class="c" data-k="gpuThroughput"></div>
+          <div class="c" data-k="setupCost"></div>
+          <div class="c" data-k="staffPerCentre"></div>
+          <div class="c" data-k="staffSalary"></div>
+          <div class="c" data-k="countryLead"></div>
+          <div class="c" data-k="langCost"></div>
+          <div class="c" data-k="langsPerCountry"></div>
+          <div class="c" data-k="respPer100k"></div>
+          <div class="c" data-k="respCost"></div>
+          <div class="c" data-k="overhead"></div>
+          <div class="c" data-k="siteCost"></div>
+          <div class="c" data-k="opex"></div>
+          <div class="c" data-k="opexGrowth"></div>
+        </details>
+        <details class="g">
+          <summary>Contract risk</summary>
+          <div class="c" data-k="pSign"></div>
+          <div class="c" data-k="pSignUG"></div>
+          <div class="c" data-k="pLoss"></div>
+        </details>
+        <details class="g">
+          <summary>Impact</summary>
+          <div class="c" data-k="redTrauma"></div>
+          <div class="c" data-k="redMat"></div>
+          <div class="c" data-k="ageTrauma"></div>
+          <div class="c" data-k="ageMat"></div>
+          <div class="c" data-k="disc"></div>
+        </details>
+        <details class="g">
+          <summary>Your terms</summary>
+          <div class="c" data-k="inv"></div>
+          <div class="c" data-k="pre"></div>
+          <div class="c" data-k="dilution"></div>
+          <div class="c" data-k="multiple"></div>
+          <div class="c" data-k="exitYear"></div>
+          <div class="c" data-k="kes"></div>
+        </details>
+        <div style="margin-top:16px"><button class="btn" type="button" id="reset">Reset all inputs</button></div>
+      </aside>
+
+      <div class="out">
+        <div class="tabs" role="tablist" aria-label="Model results">
+          <button role="tab" id="t-rev" aria-selected="true" aria-controls="v-rev">Revenue</button>
+          <button role="tab" id="t-unit" aria-selected="false" aria-controls="v-unit">Unit economics</button>
+          <button role="tab" id="t-imp" aria-selected="false" aria-controls="v-imp">Impact</button>
+          <button role="tab" id="t-ret" aria-selected="false" aria-controls="v-ret">Return</button>
+          <button role="tab" id="t-how" aria-selected="false" aria-controls="v-how">Method</button>
+        </div>
+        <div class="view" id="v-rev" role="tabpanel" aria-labelledby="t-rev">
+          <p class="small" style="margin-bottom:12px">On plan: every contract signs in its planned year. Run the Monte Carlo below to see the effect of delays and lost contracts.</p>
+          <div class="ks" id="kRev"></div>
+          <div class="chart" id="cRev"></div>
+          <div class="legend"><span><i style="background:var(--accent)"></i>Government</span><span><i style="background:var(--series)"></i>Employers</span><span><i style="background:color-mix(in srgb,var(--accent) 40%,var(--surface))"></i>Insurers</span><span><i style="background:var(--ink);height:2px;vertical-align:3px"></i>Operating result</span></div>
+          <div class="tbl" style="margin-top:16px"><table class="t" id="tYears"></table></div>
+        </div>
+        <div class="view" id="v-unit" role="tabpanel" aria-labelledby="t-unit" hidden>
+          <div class="ks" id="kUnit"></div>
+          <div class="chart" id="cUnit"></div>
+          <div class="tbl" style="margin-top:16px"><table class="t" id="tUnit"></table></div>
+          <p class="fn">Government staff answer calls in their own centres. Sauti pays community responders per completed response and carries telecom, AI inference on rented GPUs, technical staff in each centre, a country team, and the one-off training of its models in each new language.</p>
+        </div>
+        <div class="view" id="v-imp" role="tabpanel" aria-labelledby="t-imp" hidden>
+          <div class="ks" id="kImp"></div>
+          <div class="chart" id="cCE"></div>
+          <p class="fn">Each country uses its own WHO road death rate, maternal mortality ratio, birth rate and life expectancy. DALYs count years of life lost; disability averted is left out, so the impact is understated. Cost is everything payers spend on Sauti in the model.</p>
+        </div>
+        <div class="view" id="v-ret" role="tabpanel" aria-labelledby="t-ret" hidden>
+          <div class="ks" id="kRet"></div>
+          <div class="chart" id="cHist"></div>
+          <p class="fn">Valuation, dilution and exit multiple are yours to set. This is arithmetic on the business case above, not a statement of terms.</p>
+        </div>
+        <div class="view" id="v-how" role="tabpanel" aria-labelledby="t-how" hidden>
+          <div class="stack" style="max-width:660px">
+            <p class="muted"><b style="color:var(--ink)">Contracts.</b> A country enters in its contract year. Its contract scope grows in equal steps to the whole population over the rollout period. Technical preparation and the country team start one year before signing.</p>
+            <p class="muted"><b style="color:var(--ink)">Government revenue.</b> Setup = number of dispatch centres × fee per centre, invoiced half at signing and half a year later; centres = population ÷ people per centre, rounded up. Annual service fee = people in scope × fee per person. Per-dispatch fee = dispatches × price, where the price is a share of Kenya's per-evacuation tariff.</p>
+            <p class="muted"><b style="color:var(--ink)">Emergencies.</b> Per person per year in each country: WHO-estimated road deaths plus serious injuries (deaths × injuries per death), obstetric complications (births × complication share), and other medical emergencies. The capture rate is the share of these that reach the system.</p>
+            <p class="muted"><b style="color:var(--ink)">Employers and insurers.</b> Employers pay per worker per month. Insured members are people in scope × the country's health insurance coverage × the share whose insurer partners with Sauti; they pay a monthly fee per member, and their emergencies are billed to the insurer per verified incident instead of to government.</p>
+            <p class="muted"><b style="color:var(--ink)">Costs.</b> Per dispatch: responder payment, telecom and AI inference (GPU price × audio minutes ÷ throughput). Per centre per year: Sauti technical staff. Per country per year: country team and the community responder network (responders per 100,000 people × yearly cost per responder); plus model training for each new language at signing and the cost of delivering setup as a share of the setup fee. Per employer worker: on-site training and kits. Sales, account management and overhead: a share of revenue. Central: core team, platform and compliance, growing each year.</p>
+            <p class="muted"><b style="color:var(--ink)">Impact.</b> Deaths averted = emergencies captured × (trauma death rate × trauma mortality reduction + maternal death rate × maternal mortality reduction), country by country. DALYs = deaths averted × years of life remaining at the average age of death, discounted.</p>
+            <p class="muted"><b style="color:var(--ink)">Benchmarks.</b> GiveWell's top charities save a life for about USD 5,000.<sup class="r"><a href="#r10">10</a></sup> Under the GDP-per-capita convention, an intervention is very cost-effective below one times GDP per capita per DALY and cost-effective below three times; the chart uses the population-weighted GDP per capita of the selected countries.</p>
+            <p class="muted"><b style="color:var(--ink)">Monte Carlo: where the probabilities come from.</b> Each run decides, year by year, whether each planned contract is signed (probability per year, starting in the planned year) and whether a signed contract is later lost. The default signing probability is anchored on observed timelines: Ghana went from contract to national launch within a year, Nigeria from a one-territory pilot to 34 states in about four years, and m-mama took about seven years from pilot to national government ownership. A 35% chance per year puts the median delay at about one and a half years, with a long tail of contracts that never sign within the horizon. Each run also draws a shared market factor that moves capture, prices, employer volume and insurer uptake together, plus independent draws for responder pay, responder network cost, overhead, central costs, injury ratio, both mortality reductions and the exit multiple. The table reports the 10th, 50th and 90th percentiles of 1,000 runs. These are scenarios built on stated assumptions, not forecasts. The model does not include the risk that the company fails before its first contract, which applies to any early-stage investment.</p>
+            <p class="muted"><b style="color:var(--ink)">Data.</b> Population 2025, birth rate and life expectancy 2024, GDP per capita (latest), road traffic mortality (WHO estimate, 2019), maternal mortality ratio (2023), mobile subscriptions: World Bank World Development Indicators.<sup class="r"><a href="#r1">1</a></sup> Health insurance coverage: Demographic and Health Surveys as analysed by Barasa et al.<sup class="r"><a href="#r4">4</a></sup></p>
+          </div>
+        </div>
+        <div class="mc">
+          <button class="btn pri" type="button" id="runMC">Run Monte Carlo</button>
+          <span class="small" id="mcStatus">1,000 runs with contract delays, lost contracts and correlated market conditions.</span>
+        </div>
+        <div style="padding:0 20px 20px" id="mcWrap" hidden><div class="tbl"><table class="t" id="mcTable"></table></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="countries">
+  <div class="wrap">
+    <div class="col stack">
+      <p class="label">Countries</p>
+      <h2>Where the same problem repeats, ranked by data.</h2>
+      <p class="muted">Every low and lower-middle income country, scored on five measures you can weight: the emergency death rate (road and maternal deaths per 100,000, highest where response systems are weakest), population, mobile reach, ability to pay (GDP per capita) and health insurance coverage. Tick a country to add it to the model and set the year its contract is signed.</p>
+    </div>
+    <div class="two" style="margin-top:20px;gap:20px">
+      <div class="c" data-k="wNeed"></div>
+      <div class="c" data-k="wSize"></div>
+      <div class="c" data-k="wReach"></div>
+      <div class="c" data-k="wPay"></div>
+      <div class="c" data-k="wIns"></div>
+    </div>
+    <label class="small" style="display:flex;gap:8px;align-items:center;margin-top:14px"><input type="checkbox" class="chk" id="exclConflict" checked> Leave out countries where operating is impractical today (active conflict or sanctions)</label>
+    <div class="tbl rank-wrap" style="margin-top:14px"><table class="t" id="tRank"></table></div>
+    <p class="fn">Population 2025; deaths are WHO road traffic deaths (2019 rate) plus maternal deaths (births × 2023 ratio), applied to 2025 population. Contract value uses the model's current prices at full scope. Insurance: share covered by any health insurance in the latest DHS; blank where not surveyed, in which case the score uses the other four measures.</p>
+  </div>
+</section>
+
+<section id="round">
+  <div class="wrap two">
+    <div class="stack">
+      <p class="label">The round</p>
+      <h2>Raising now.</h2>
+      <p class="muted">Round size, terms and use of funds are shared in conversation.</p>
+    </div>
+    <div class="stack muted">
+      <p class="label">Company</p>
+      <p>Sauti Dispatch Limited, incorporated in Kampala in 2026. A team of nine: emergency physicians, doctors and software engineers. The product is built and running: call intake in local languages, AI triage, responder dispatch and hospital pre-alerts.</p>
+      <p>Registered with Uganda's Personal Data Protection Office. Data held on servers in-country. Backed by an angel investor.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap stack">
+    <p class="label">Contact</p>
+    <h2>Get in touch with us.</h2>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <span class="copy">info@sautihealth.com</span><span class="copy">+49 157 3785 8903</span><span class="copy">+256 764 442 593</span>
+      <a class="btn pri" href="mailto:info@sautihealth.com?subject=Sauti%20investor%20conversation">Email</a>
+    </div>
+    <p class="small">Plot 160, Sir Apollo Kaggwa Road, Kampala · Reg. No. 80034434888019</p>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="wrap stack">
+    <p class="label">Sources</p>
+    <ol class="refs">
+      <li id="r1">World Bank, World Development Indicators (API, accessed November 2026): SP.POP.TOTL, SP.DYN.CBRT.IN, SP.DYN.LE00.IN, NY.GDP.PCAP.CD, SH.STA.TRAF.P5 (WHO estimate), SH.STA.MMRT (WHO/UN MMEIG), IT.CEL.SETS.P2; country income classification. <a href="https://data.worldbank.org" target="_blank" rel="noopener">data.worldbank.org</a></li>
+      <li id="r2">Social Health Authority, Kenya. Ambulance emergency transfer tariffs, Annexure B3-B, September 2026. <a href="https://www.sha.go.ke/wp-content/uploads/2026/09/ANNEXURE-B3-B-Ambulance-Emergency-Transfer-Tariffs.pdf" target="_blank" rel="noopener">sha.go.ke</a></li>
+      <li id="r3">Workers Compensation Act, Cap. 225, Laws of Uganda. <a href="https://ira.go.ug/cp/uploads/Workers%20Compensation%20Act%20Cap%20225.pdf" target="_blank" rel="noopener">ira.go.ug</a></li>
+      <li id="r4">Barasa E, Kazungu J, Nguhiu P, Ravishankar N. Examining the level and inequality in health insurance coverage in 36 sub-Saharan African countries. BMJ Global Health 2021;6:e004712. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8076950/" target="_blank" rel="noopener">PMC8076950</a></li>
+      <li id="r6">Henry JA, Reingold AL. Prehospital trauma systems reduce mortality in developing countries: a systematic review and meta-analysis. J Trauma Acute Care Surg 2012;73:261–8. <a href="https://supportsummaries.epistemonikos.org/support-summaries/show/do-pre-hospital-trauma-systems-reduce-mortalitya" target="_blank" rel="noopener">SUPPORT summary</a></li>
+      <li id="r7">Jayaraman S et al. First Things First: effectiveness and scalability of a basic prehospital trauma care program for lay first-responders in Kampala, Uganda. PLoS ONE 2009;4:e6955. <a href="https://ideas.repec.org/a/plo/pone00/0006955.html" target="_blank" rel="noopener">record</a></li>
+      <li id="r8">Community-based transport system in Shinyanga, Tanzania. PLOS Global Public Health 2023. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10395988/" target="_blank" rel="noopener">PMC10395988</a></li>
+      <li id="r9">Touch Foundation. Mobilising Maternal Health: m-mama in Sengerema, Tanzania, 2017. <a href="https://www.telecomtv.com/content/tracker/vodafone-foundations-pioneering-ambulance-taxi-service-reduces-maternal-mortality-rate-by-a-quarter-new-research-reveals-26961" target="_blank" rel="noopener">summary</a></li>
+      <li id="r10">GiveWell, cost to save a life for top charities (April 2024), as compiled by Our World in Data. <a href="https://ourworldindata.org/cost-effectiveness" target="_blank" rel="noopener">ourworldindata.org</a></li>
+      <li id="r11">Google Cloud, NVIDIA L4 on-demand price per GPU-hour (us-central1), as listed November 2026. <a href="https://computeprices.com/providers/google/gpus/l4" target="_blank" rel="noopener">computeprices.com</a></li>
+      <li id="r14">Federal Ministry of Health, Nigeria: NEMSAS expansion to 34 states and plans for a digital emergency dispatch platform, July 2026, as reported by Premium Times. <a href="https://www.premiumtimesng.com/health/health-news/894343-fg-expands-emergency-healthcare-system-to-34-states-plans-digital-dispatch-platform.html" target="_blank" rel="noopener">premiumtimesng.com</a></li>
+      <li id="r15">Government of Ghana, Public Procurement Authority approval of a USD 12.5 million, four-year contract for nationwide medical drone delivery (December 2018), as reported by Citi Newsroom. <a href="https://citinewsroom.com/2018/12/03/govt-signs-12m-deal-for-nationwide-drone-delivery-of-medical-supplies/" target="_blank" rel="noopener">citinewsroom.com</a></li>
+      <li id="r16">108 emergency service, India: government-funded setup, operations contracted to private operators; infrastructure under USD 0.50 per person served. <a href="https://en.wikipedia.org/wiki/108_(emergency_telephone_number)" target="_blank" rel="noopener">summary</a>; Andhra Pradesh 108 request for proposals <a href="https://cfw.ap.nic.in/pdf/108%20RFP-%20final%20version.pdf" target="_blank" rel="noopener">cfw.ap.nic.in</a></li>
+      <li id="r17">Vodafone Foundation. m-mama expands nationally in Tanzania, April 2022. <a href="https://foundation.vodafone.com/news/vodafone-foundation/m-mama-expands-nationally-in-tanzania" target="_blank" rel="noopener">foundation.vodafone.com</a></li>
+    </ol>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Sauti Dispatch Limited. For discussion with prospective investors; not an offer of securities.</div></footer>
+<script src="assets/countries.js"></script>
+<script src="assets/model.js"></script>
+</body>
+</html>
