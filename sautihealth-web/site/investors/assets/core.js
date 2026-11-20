@@ -61,15 +61,20 @@
     return s[lo] + (s[hi] - s[lo]) * (i - lo);
   }
 
-  /** Share of values below v, counting ties as half (0 to 1). */
+  /**
+   * Percentile rank of v within values, from 0 (lowest) to 1 (highest).
+   * v is expected to be one of the values; tied values share the midpoint rank.
+   */
   function percentileRank(values, v) {
     var n = values.length;
+    if (n < 2) return 0.5;
     var below = 0;
+    var equal = 0;
     for (var i = 0; i < n; i++) {
       if (values[i] < v) below++;
-      else if (values[i] === v) below += 0.5;
+      else if (values[i] === v) equal++;
     }
-    return n > 1 ? below / (n - 1) : 0.5;
+    return Math.min(1, (below + Math.max(0, equal - 1) / 2) / (n - 1));
   }
 
   /** Discounted years of life lost for a death with L years remaining. */

@@ -168,7 +168,7 @@ document.querySelectorAll('#countries input[type=range]').forEach(function(i){i.
 ["i-feePerCentre","i-feeCapita","i-tariffShare","i-capture","i-peoplePerCentre","i-injPerDeath","i-obsCompl","i-otherInc","i-kes"].forEach(function(id){var e=document.getElementById(id);if(e)e.addEventListener("change",renderRank);});
 var tabs=["rev","unit","imp","ret","how"];
 tabs.forEach(function(id){document.getElementById("t-"+id).addEventListener("click",function(){tabs.forEach(function(o){document.getElementById("t-"+o).setAttribute("aria-selected",o===id);document.getElementById("v-"+o).hidden=o!==id;});});});
-try{window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",update);}catch(e){}
+if(window.matchMedia){var mq=window.matchMedia("(prefers-color-scheme: dark)");if(mq.addEventListener)mq.addEventListener("change",update);}
 new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
 document.getElementById("metaN").textContent=D.length+" countries";
 applyPreset("wave");
