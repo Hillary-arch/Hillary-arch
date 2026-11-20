@@ -1,6 +1,11 @@
 /* Country data: World Bank WDI (accessed Nov 2026) and DHS insurance coverage (Barasa et al. 2021).
    Regenerate with scripts/fetch_country_data.py. */
-window.SAUTI_COUNTRIES=[
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else root.SAUTI_COUNTRIES = factory();
+})(typeof self !== "undefined" ? self : this, function () {
+  "use strict";
+  return [
 ["AFG","Afghanistan",43.84,35,66.3,416.9,15.9,521,60.1,null],["AGO","Angola",39.04,37.2,64.8,3129.5,26.1,183,69.7,5.8],["BDI","Burundi",14.39,33.2,63.8,233.8,35.5,392,63.2,22.0],
 ["BEN","Benin",14.81,33.4,61,1658.3,26.8,518,125.9,1.2],["BFA","Burkina Faso",24.07,31.3,61.3,1147.6,31,242,116.6,0.9],["BGD","Bangladesh",175.69,20,74.9,2597.3,15.3,115,108.1,null],
 ["BOL","Bolivia",12.58,21,68.7,5147.8,21.1,146,98,null],["BTN","Bhutan",0.8,12.5,73.3,4492.8,16.2,47,99.8,null],["CAF","Central African Republic",5.51,46.2,57.7,556.1,37.7,692,38.8,null],
@@ -26,3 +31,4 @@ window.SAUTI_COUNTRIES=[
 ["UZB","Uzbekistan",37.05,25.6,72.5,3968.3,11.7,26,110.5,null],["VEN","Venezuela",28.52,15.2,72.7,3494.8,39,227,71,null],["VUT","Vanuatu",0.34,27.7,71.7,4038.7,14.9,100,89.3,null],
 ["YEM","Yemen",41.77,34.4,69.4,633.9,29.4,118,50.9,null],["ZMB","Zambia",21.91,32.7,66.5,1317.9,20.5,85,108.7,2.5],["ZWE","Zimbabwe",16.95,29.9,63.1,3021.4,41.2,358,94.2,11.6]
 ].map(function(r){return {iso:r[0],name:r[1],pop:r[2],cbr:r[3],le:r[4],gdp:r[5],road:r[6],mmr:r[7],mob:r[8],ins:r[9]};});
+});
